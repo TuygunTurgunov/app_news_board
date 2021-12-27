@@ -2,6 +2,7 @@ package uz.pdp.uz.app_news_board.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.support.PagedListHolder;
+import org.springframework.core.convert.ConversionFailedException;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
@@ -110,4 +111,24 @@ public class NewsController {
         });
         return errors;
     }
+
+
+
+    /**
+     * Swagger
+     */
+
+//    @ExceptionHandler(ConversionFailedException.class)
+//    @ResponseStatus(HttpStatus.BAD_REQUEST)
+//    public ResponseEntity<String> handleConnversion(RuntimeException ex) {
+//        return new ResponseEntity<>(ex.getMessage(), HttpStatus.BAD_REQUEST);
+//    }
+//
+//    //@ExceptionHandler(BookNotFoundException.class)
+//    @ResponseStatus(HttpStatus.NOT_FOUND)
+//    public ResponseEntity<String> handleBookNotFound(RuntimeException ex) {
+//        return new ResponseEntity<>(ex.getMessage(), HttpStatus.NOT_FOUND);
+//    }
+
+
 }
