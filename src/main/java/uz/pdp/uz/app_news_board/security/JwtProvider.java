@@ -38,7 +38,7 @@ public class JwtProvider {
                     .parseClaimsJws(token)
                     .getBody()
                     .getSubject();
-            System.out.println(email);
+            //System.out.println(email);
             return email;
 
         } catch (Exception e) {
