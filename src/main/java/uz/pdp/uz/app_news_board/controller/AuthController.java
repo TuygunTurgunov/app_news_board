@@ -43,8 +43,11 @@ public class AuthController {
     }
 
 
-
-
+    /**
+     * test after windows
+     * @param ex
+     * @return
+     */
 
 
     @ResponseStatus(HttpStatus.BAD_REQUEST)
@@ -59,9 +62,5 @@ public class AuthController {
         });
         return errors;
     }
-
-
-
-
 
 }
